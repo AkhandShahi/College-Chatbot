@@ -78,8 +78,9 @@ def home():
 def bot():
     return render_template("index.html")
 
-@app.route("/get")
+@app.route("/get_bot_response", method = ['GET'])
 def get_bot_response():
+    #data = request.json["data"]
     userText = request.args.get('msg')
     return chatbot_response(userText)
 
