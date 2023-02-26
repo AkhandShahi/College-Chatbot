@@ -87,6 +87,14 @@ def get_bot_response():
     print(userText)
     return chatbot_response(userText)
 
+@app.route("/query_res", methods = ['POST'])
+def query_res():
+    print("executing")
+    data = [x for x in request.form.values()]
+    print(data)
+    userText1 = data[0]
+    print(userText1)
+    return chatbot_response(userText1)
 
 if __name__ == "__main__":
     app.run()
