@@ -78,7 +78,7 @@ def home():
 def bot():
     return render_template("index.html")
 
-@app.route("/get")
+@app.route("/get_res", methods = ['POST'])
 def get_bot_response():
     print("executing")
     data = request.json["data"]
