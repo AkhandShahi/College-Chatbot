@@ -79,13 +79,13 @@ def bot():
     return render_template("index.html")
 
 @app.route("/get")
-def get_bot_response():
+def query_res():
     print("executing")
 
-    userText = request.args.get('msg')
-    print(userText)
 
-    return chatbot_response(userText)
+    userText = request.args.get('msg')
+
+    return chatbot_response(" ")
 
     #print("executing")
     #data = request.json["data"]

@@ -50,7 +50,7 @@
          "context": [""]
         },
         {"tag": "fest",
-         "patterns": ["Fest in college", "Function in college", "What is parampara", "Tell me about fest", "Event in college"],
+         "patterns": ["Fest in college", "Function in college", "What is parampara", "Tell me about fest", "Event in college", "tell me about parampara"],
          "responses": ["We organize Parampara which is Cultural-Techno Fest imparting students with rigorous energy to unite, compete as well as enjoy the kudos of ITM. EDM Nights, Sports, Cultural events & lots of more."],
          "context": [""]
         },
@@ -67,7 +67,7 @@
         },
 
         {"tag": "Self",
-         "patterns": ["Tell me about your self", "what is your name", "your name", "who are you", "who develop or created or build or made you"],
+         "patterns": ["Tell me about yourself","tell me about your self", "what is your name", "your name", "who are you", "who develop or created or build or made you"],
          "responses": ["Hello my name is Alex and the developer who build me are: \n Shivani Yadav \n Shaumya Srivastava \n Vishwareya Viswakarma"],
          "context": [""]
         }
