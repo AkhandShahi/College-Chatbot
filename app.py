@@ -78,23 +78,23 @@ def home():
 def bot():
     return render_template("index.html")
 
-@app.route("/bot/get_res", methods = ['POST'])
+@app.route("/get")
 def get_bot_response():
     print("executing")
-    data = request.json["data"]
-    print(data)
-    userText = data['query']
+
+    userText = request.args.get('msg')
     print(userText)
+
     return chatbot_response(userText)
 
-@app.route("/bot/query_res", methods = ['POST'])
-def query_res():
-    print("executing")
-    data = [x for x in request.form.values()]
-    print(data)
-    userText1 = data[0]
-    print(userText1)
-    return chatbot_response(userText1)
+    #print("executing")
+    #data = request.json["data"]
+    #print(data)
+    #userText = data['query']
+    #print(userText)
+    #return chatbot_response(userText)
+
+
 
 if __name__ == "__main__":
     app.run()
