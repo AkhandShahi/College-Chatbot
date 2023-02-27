@@ -1,5 +1,6 @@
 import nltk
 nltk.download('popular')
+nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
@@ -85,7 +86,7 @@ def query_res():
 
     userText = request.args.get('msg')
 
-    return chatbot_response(" ")
+    return chatbot_response(userText)
 
     #print("executing")
     #data = request.json["data"]
